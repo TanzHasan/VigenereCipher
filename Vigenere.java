@@ -13,6 +13,8 @@
 */
 public class Vigenere{
   public static String cipher(String text, String key, Boolean encode){
+    text = text.toUpperCase();
+    key = key.toUpperCase();
     char [] ntext= new char[text.length()];
     for (int i = 0; i < text.length(); i++){
       int x = 0;
